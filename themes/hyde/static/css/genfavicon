@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# OA: Gavin Vales
+# CREATED: Fri  4 Jan 15:35:36 GMT 2019
+
+SDIR=$USER_REPO_DIR/ghb/public
+FDIR=$USER_REPO_DIR/ghb/themes/hyde/static
+CWLL=$(readlink -f $XDG_PICTURES_DIR/i3wallpaper/current)
+
+convert "${CWLL}" -resize 64x64 ${FDIR}/favicon.png
+cp "${CWLL}" "${SDIR}/about.png"
