@@ -5,284 +5,200 @@
 
 	<style type="text/css">
 
-		* {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
+		pre,
+		code {
+			font-family: "%%guifont%%", Menlo, Monaco, "Courier New", monospace;
+		}
+		pre {
+			padding: .5rem;
+			line-height: 1.25;
+			overflow-x: scroll;
+			background-color: %%ylw%%;
+			color: %%bg0%%;
+		}
+		@media print {
+			*,
+			*:before,
+			*:after {
+				background: transparent !important;
+				color: %%bg0%% !important;
+				box-shadow: none !important;
+				text-shadow: none !important;
+			}
+			a,
+			a:visited {
+				text-decoration: underline;
+			}
+			a[href]:after {
+				content: " (" attr(href) ")";
+			}
+			abbr[title]:after {
+				content: " (" attr(title) ")";
+			}
+			a[href^="#"]:after,
+			a[href^="javascript:"]:after {
+				content: "";
+			}
+			pre,
+			blockquote {
+				border: 1px solid %%acb%%;
+				page-break-inside: avoid;
+			}
+			thead {
+				display: table-header-group;
+			}
+			tr,
+			img {
+				page-break-inside: avoid;
+			}
+			img {
+				max-width: 100% !important;
+			}
+			p,
+			h2,
+			h3 {
+				orphans: 3;
+				widows: 3;
+			}
+			h2,
+			h3 {
+				page-break-after: avoid;
+			}
+		}
+		a,
+		a:visited {
+			color: %%acc%%;
+		}
+		a:hover,
+		a:focus,
+		a:active {
+			color: %%gnt%%;
+		}
+		.retro-no-decoration {
+			text-decoration: none;
+		}
+		html {
+			font-size: 12px;
+		}
+		@media screen and (min-width: 32rem) and (max-width: 48rem) {
+			html {
+				font-size: 15px;
+			}
+		}
+		@media screen and (min-width: 48rem) {
+			html {
+				font-size: 16px;
+			}
+		}
+		body {
+			line-height: 1.85;
+		}
+		p,
+		.retro-p {
+			font-size: 1rem;
+			margin-bottom: 1.3rem;
+		}
+		h1,
+		.retro-h1,
+		h2,
+		.retro-h2,
+		h3,
+		.retro-h3,
+		h4,
+		.retro-h4 {
+			margin: 1.414rem 0 .5rem;
+			font-weight: inherit;
+			line-height: 1.42;
+		}
+		h1,
+		.retro-h1 {
+			margin-top: 0;
+			font-size: 2rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		h2,
+		.retro-h2 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		h3,
+		.retro-h3 {
+			font-size: 1rem;
+			font-weight: bold;
+			font-style: italic;
+		}
+		h4,
+		.retro-h4 {
+			font-size: .5rem;
+			font-style: italic;
+		}
+		h5,
+		.retro-h5 {
+			font-size: .25rem;
+			font-style: italic;
+		}
+		h6,
+		.retro-h6 {
+			font-size: .15rem;
+		}
+		small,
+		.retro-small {
+			font-size: .05rem;
+		}
+		.title {
+			font-size: 4rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		.subtitle {
+			font-size: 2rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		.author {
+			font-size: 1rem;
+			font-style: italic;
+			text-align: center;
+		}
+		.date {
+			font-size: 1rem;
+			text-align: center;
+		}
+		img,
+		canvas,
+		iframe,
+		video,
+		svg,
+		select,
+		textarea {
+			max-width: 100%;
 		}
 		html,
 		body {
-			margin: 0;
-			padding: 0;
+			background-color: %%bg0%%;
+			min-height: 100%;
 		}
 		html {
-			font-family: "%%guifont%%", Helvetica, Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-		}
-		@media (min-width: 38em) {
-			html {
-				font-size: 20px;
-			}
+			font-size: 18px;
 		}
 		body {
 			color: %%fg0%%;
-			background-color: %%bg0%%;
-			-webkit-text-size-adjust: 100%;
-					-ms-text-size-adjust: 100%;
-		}
-		a {
-			color: %%blu%%;
-			text-decoration: none;
-		}
-		a:hover,
-		a:focus {
-			text-decoration: underline;
-		}
-		h1, h2, h3, h4, h5, h6 {
-			margin-bottom: .5rem;
-			font-weight: bold;
-			line-height: 1.25;
-			color: %%fg1%%;
-			text-rendering: optimizeLegibility;
-		}
-		h1 {
-			font-size: 2rem;
-		}
-		h2 {
-			margin-top: 1rem;
-			font-size: 1.5rem;
-		}
-		h3 {
-			margin-top: 1.5rem;
-			font-size: 1.25rem;
-		}
-		h4, h5, h6 {
-			margin-top: 1rem;
-			font-size: 1rem;
-		}
-		p {
-			margin-top: 0;
-			margin-bottom: 1rem;
-		}
-		strong {
-			color: %%fg0%%;
-		}
-		ul, ol, dl {
-			margin-top: 0;
-			margin-bottom: 1rem;
-		}
-		dt {
-			font-weight: bold;
-		}
-		dd {
-			margin-bottom: .5rem;
-		}
-		hr {
-			position: relative;
-			margin: 1.5rem 0;
-			border: 0;
-			border-top: 1px solid %%bg1%%;
-			border-bottom: 1px solid %%bg0%%;
-		}
-		abbr {
-			font-size: 85%;
-			font-weight: bold;
-			color: %%fg1%%;
-			text-transform: uppercase;
-		}
-		abbr[title] {
-			cursor: help;
-			border-bottom: 1px dotted %%acb%%;
-		}
-		code,
-		pre {
-			font-family: Monaco, Menlo, "Courier New", monospace;
-		}
-		code {
-			padding: .25em .5em;
-			font-size: 85%;
-			color: %%acc%%;
-			background-color: %%acb%%;
-			border-radius: 3px;
+			font-family: "%%guifont%%";
+			line-height: 1.45;
+			margin: 6rem auto 1rem;
+			max-width: 48rem;
+			padding: .25rem;
 		}
 		pre {
-			display: block;
-			margin-top: 0;
-			margin-bottom: 1rem;
-			padding: 1rem;
-			font-size: .8rem;
-			line-height: 1.4;
-			white-space: pre;
-			white-space: pre-wrap;
-			word-break: break-all;
-			word-wrap: break-word;
-			background-color: %%acb%%;
-		}
-		pre code {
-			padding: 0;
-			font-size: 100%;
-			color: inherit;
-			background-color: transparent;
-		}
-		.highlight {
-			margin-bottom: 1rem;
-			border-radius: 4px;
-		}
-		.highlight pre {
-			margin-bottom: 0;
+			background-color: %%ylw%%;
+			color: %%bg0%%;
 		}
 		blockquote {
-			padding: .5rem 1rem;
-			margin: .8rem 0;
-			color: %%fg2%%;
-			border-left: .25rem solid %%acb%%;
-		}
-		blockquote p:last-child {
-			margin-bottom: 0;
-		}
-		@media (min-width: 30em) {
-			blockquote {
-				padding-right: 5rem;
-				padding-left: 1.25rem;
-			}
-		}
-		img {
-			display: block;
-			margin: 0 0 1rem;
-			border-radius: 5px;
-			max-width: 100%;
-		}
-		table {
-			margin-bottom: 1rem;
-			width: 100%;
-			border: 1px solid %%fg0%%;
-			border-collapse: collapse;
-		}
-		td,
-		th {
-			padding: .25rem .5rem;
-			border: 1px solid %%fg0%%;
-		}
-		tbody tr:nth-child(odd) td,
-		tbody tr:nth-child(odd) th {
-			background-color: %%acb%%;
-		}
-		.lead {
-			font-size: 1.25rem;
-			font-weight: 300;
-		}
-		.message {
-			margin-bottom: 1rem;
-			padding: 1rem;
-			color: %%bg0%%;
-			background-color: %%fg0%%;
-		}
-		.container {
-			max-width: 38rem;
-			padding-left:  1rem;
+			border-left: 3px solid %%acc%%;
+			border-bottom: 3px solid %%acc%%;
+			padding-left: 1rem;
 			padding-right: 1rem;
-			margin-left:  auto;
-			margin-right: auto;
-		}
-		.masthead {
-			padding-top:    1rem;
-			padding-bottom: 1rem;
-			margin-bottom: 3rem;
-		}
-		.masthead-title {
-			margin-top: 0;
-			margin-bottom: 0;
-			color: %%fg1%%;
-		}
-		.masthead-title a {
-			color: %%fg1%%;
-		}
-		.masthead-title small {
-			font-size: 75%;
-			font-weight: 400;
-			color: %%bg2%%;
-			letter-spacing: 0;
-		}
-		.page,
-		.post {
-			margin-bottom: 4em;
-		}
-		.page-title,
-		.post-title,
-		.post-title a {
-			color: %%fg1%%;
-		}
-		.page-title,
-		.post-title {
-			margin-top: 0;
-		}
-		.post-date {
-			display: block;
-			margin-top: -.5rem;
-			margin-bottom: 1rem;
-			color: %%bg3%%;
-		}
-		.related {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			border-top: 1px solid %%bg1%%;
-		}
-		.related-posts {
-			padding-left: 0;
-			list-style: none;
-		}
-		.related-posts h3 {
-			margin-top: 0;
-		}
-		.related-posts li small {
-			font-size: 75%;
-			color: %%bg3%%;
-		}
-		.related-posts li a:hover {
-			color: %%blu%%;
-			text-decoration: none;
-		}
-		.related-posts li a:hover small {
-			color: inherit;
-		}
-		.pagination {
-			overflow: hidden;
-			margin-left: -1rem;
-			margin-right: -1rem;
-			font-family: "PT Sans", Helvetica, Arial, sans-serif;
-			color: %%bg1%%;
-			text-align: center;
-		}
-		.pagination-item {
-			display: block;
-			padding: 1rem;
-			border: 1px solid %%bg1%%;
-		}
-		.pagination-item:first-child {
-			margin-bottom: -1px;
-		}
-		a.pagination-item:hover {
-			background-color: %%bg0%%;
-		}
-		@media (min-width: 30em) {
-			.pagination {
-				margin: 3rem 0;
-			}
-			.pagination-item {
-				float: left;
-				width: 50%;
-			}
-			.pagination-item:first-child {
-				margin-bottom: 0;
-				border-top-left-radius:    4px;
-				border-bottom-left-radius: 4px;
-			}
-			.pagination-item:last-child {
-				margin-left: -1px;
-				border-top-right-radius:    4px;
-				border-bottom-right-radius: 4px;
-			}
 		}
 
 	</style>
