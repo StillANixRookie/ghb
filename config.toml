@@ -1,5 +1,5 @@
 theme = "hyde"
-baseURL = "StillANixRookie.github.io/"
+baseURL = "https://stillanixrookie.github.io/"
 languageCode = "en-us"
 title = "Gavin Vales"
 

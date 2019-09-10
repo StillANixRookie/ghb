@@ -1,0 +1,223 @@
+{{ define "main" -}}
+
+<div class="post">
+  <title>{{ .Title }}</title>
+
+	<style type="text/css">
+
+		code,
+		pre {
+			font-family: Monaco, Menlo, "Courier New", monospace;
+		}
+		code {
+			padding: .25em .5em;
+			font-size: 85%;
+			color: %%acc%%;
+			background-color: %%acb%%;
+			border-radius: 3px;
+		}
+		pre {
+			display: block;
+			margin-top: 0;
+			margin-bottom: 1rem;
+			padding: 1rem;
+			font-size: .8rem;
+			line-height: 1.4;
+			white-space: pre;
+			white-space: pre-wrap;
+			word-break: break-all;
+			word-wrap: break-word;
+			background-color: %%acb%%;
+		}
+		pre code {
+			padding: 0;
+			font-size: 100%;
+			color: inherit;
+			background-color: transparent;
+		}
+		.highlight {
+			margin-bottom: 1rem;
+			border-radius: 4px;
+		}
+		.highlight pre {
+			margin-bottom: 0;
+		}
+		a,
+		a:visited {
+			color: %%acc%%;
+		}
+		a:hover,
+		a:focus,
+		a:active {
+			color: %%gnt%%;
+		}
+		.retro-no-decoration {
+			text-decoration: none;
+		}
+		html {
+			font-size: 12px;
+		}
+		@media screen and (min-width: 32rem) and (max-width: 48rem) {
+			html {
+				font-size: 15px;
+			}
+		}
+		@media screen and (min-width: 48rem) {
+			html {
+				font-size: 16px;
+			}
+		}
+		body {
+			line-height: 1.85;
+		}
+		p,
+		.retro-p {
+			font-size: 1rem;
+			margin-bottom: 1.3rem;
+		}
+		h1,
+		.retro-h1,
+		h2,
+		.retro-h2,
+		h3,
+		.retro-h3,
+		h4,
+		.retro-h4 {
+			margin: 1.414rem 0 .5rem;
+			font-weight: inherit;
+			line-height: 1.42;
+		}
+		h1,
+		.retro-h1 {
+			margin-top: 0;
+			font-size: 2rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		h2,
+		.retro-h2 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		h3,
+		.retro-h3 {
+			font-size: 1rem;
+			font-weight: bold;
+			font-style: italic;
+		}
+		h4,
+		.retro-h4 {
+			font-size: .5rem;
+			font-style: italic;
+		}
+		h5,
+		.retro-h5 {
+			font-size: .25rem;
+			font-style: italic;
+		}
+		h6,
+		.retro-h6 {
+			font-size: .15rem;
+		}
+		small,
+		.retro-small {
+			font-size: .05rem;
+		}
+		.title {
+			font-size: 4rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		.subtitle {
+			font-size: 2rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		.author {
+			font-size: 1rem;
+			font-style: italic;
+			text-align: center;
+		}
+		.date {
+			font-size: 1rem;
+			text-align: center;
+		}
+		img,
+		canvas,
+		iframe,
+		video,
+		svg,
+		select,
+		textarea {
+			max-width: 100%;
+		}
+		html,
+		body {
+			background-color: %%bg0%%;
+			min-height: 100%;
+		}
+		html {
+			font-size: 18px;
+		}
+		body {
+			color: %%fg0%%;
+			font-family: "%%guifont%%";
+			line-height: 1.45;
+			margin: 6rem auto 1rem;
+			padding: .25rem;
+		}
+		pre {
+			background-color: %%ylw%%;
+			color: %%bg0%%;
+		}
+		blockquote {
+			padding: .5rem 1rem;
+			margin: .8rem 0;
+			color: %%fg2%%;
+			border-left: .25rem solid %%acb%%;
+		}
+		blockquote p:last-child {
+			margin-bottom: 0;
+		}
+		@media (min-width: 30em) {
+			blockquote {
+				padding-right: 5rem;
+				padding-left: 1.25rem;
+			}
+		}
+		img {
+			display: block;
+			margin: 0 0 1rem;
+			border-radius: 5px;
+			max-width: 100%;
+		}
+		table {
+			margin-bottom: 1rem;
+			width: 100%;
+			border: 1px solid %%fg0%%;
+			border-collapse: collapse;
+		}
+		td,
+		th {
+			padding: .25rem .5rem;
+			border: 1px solid %%fg0%%;
+		}
+		tbody tr:nth-child(odd) td,
+		tbody tr:nth-child(odd) th {
+			background-color: %%acb%%;
+		}
+
+	</style>
+
+  <h1>{{ .Title }}</h1>
+  <time datetime={{ .Date.Format "2006-01-02T15:04:05Z0700" }} class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+
+
+  {{ .Content }}
+</div>
+
+{{ if .Site.DisqusShortname -}}
+<h2>Comments</h2>
+{{ template "_internal/disqus.html" . }}
+{{- end }}
+{{- end }}

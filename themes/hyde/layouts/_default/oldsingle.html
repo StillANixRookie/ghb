@@ -5,23 +5,49 @@
 
 	<style type="text/css">
 
-		pre,
+		code,
+		pre {
+			font-family: Monaco, Menlo, "Courier New", monospace;
+		}
 		code {
-			font-family: "%%guifont%%", Menlo, Monaco, "Courier New", monospace;
+			padding: .25em .5em;
+			font-size: 85%;
+			color: #fd888d;
+			background-color: #9c6a70;
+			border-radius: 3px;
 		}
 		pre {
-			padding: .5rem;
-			line-height: 1.25;
-			overflow-x: scroll;
-			background-color: %%ylw%%;
-			color: %%bg0%%;
+			display: block;
+			margin-top: 0;
+			margin-bottom: 1rem;
+			padding: 1rem;
+			font-size: .8rem;
+			line-height: 1.4;
+			white-space: pre;
+			white-space: pre-wrap;
+			word-break: break-all;
+			word-wrap: break-word;
+			background-color: #9c6a70;
+		}
+		pre code {
+			padding: 0;
+			font-size: 100%;
+			color: inherit;
+			background-color: transparent;
+		}
+		.highlight {
+			margin-bottom: 1rem;
+			border-radius: 4px;
+		}
+		.highlight pre {
+			margin-bottom: 0;
 		}
 		@media print {
 			*,
 			*:before,
 			*:after {
 				background: transparent !important;
-				color: %%bg0%% !important;
+				color: #3c4c55 !important;
 				box-shadow: none !important;
 				text-shadow: none !important;
 			}
@@ -41,7 +67,7 @@
 			}
 			pre,
 			blockquote {
-				border: 1px solid %%acb%%;
+				border: 1px solid #9c6a70;
 				page-break-inside: avoid;
 			}
 			thead {
@@ -67,12 +93,12 @@
 		}
 		a,
 		a:visited {
-			color: %%acc%%;
+			color: #fd888d;
 		}
 		a:hover,
 		a:focus,
 		a:active {
-			color: %%gnt%%;
+			color: #daccf0;
 		}
 		.retro-no-decoration {
 			text-decoration: none;
@@ -176,35 +202,66 @@
 		}
 		html,
 		body {
-			background-color: %%bg0%%;
+			background-color: #3c4c55;
 			min-height: 100%;
 		}
 		html {
 			font-size: 18px;
 		}
 		body {
-			color: %%fg0%%;
-			font-family: "%%guifont%%";
+			color: #ffebc3;
+			font-family: "Luxi Mono";
 			line-height: 1.45;
 			margin: 6rem auto 1rem;
-			max-width: 48rem;
 			padding: .25rem;
 		}
 		pre {
-			background-color: %%ylw%%;
-			color: %%bg0%%;
+			background-color: #eed094;
+			color: #3c4c55;
 		}
 		blockquote {
-			border-left: 3px solid %%acc%%;
-			border-bottom: 3px solid %%acc%%;
-			padding-left: 1rem;
-			padding-right: 1rem;
+			padding: .5rem 1rem;
+			margin: .8rem 0;
+			color: #d7c39b;
+			border-left: .25rem solid #9c6a70;
+		}
+		blockquote p:last-child {
+			margin-bottom: 0;
+		}
+		@media (min-width: 30em) {
+			blockquote {
+				padding-right: 5rem;
+				padding-left: 1.25rem;
+			}
+		}
+		img {
+			display: block;
+			margin: 0 0 1rem;
+			border-radius: 5px;
+			max-width: 100%;
+		}
+		table {
+			margin-bottom: 1rem;
+			width: 100%;
+			border: 1px solid #ffebc3;
+			border-collapse: collapse;
+		}
+		td,
+		th {
+			padding: .25rem .5rem;
+			border: 1px solid #ffebc3;
+		}
+		tbody tr:nth-child(odd) td,
+		tbody tr:nth-child(odd) th {
+			background-color: #9c6a70;
 		}
 
 	</style>
 
   <h1>{{ .Title }}</h1>
   <time datetime={{ .Date.Format "2006-01-02T15:04:05Z0700" }} class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+
+
   {{ .Content }}
 </div>
 
