@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Gavin Vales</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on Gavin Vales</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Sep 2019 23:52:15 +0100</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Uni Work</title>
+      <link>http://example.org/posts/uni-work/</link>
+      <pubDate>Tue, 03 Sep 2019 23:52:15 +0100</pubDate>
+      
+      <guid>http://example.org/posts/uni-work/</guid>
+      <description>     2nd Year Group Project.pdf  (2478 ko)   3rd Year Dissertation.pdf  (3015 ko)    </description>
+    </item>
+    
+    <item>
+      <title>CV/Resume</title>
+      <link>http://example.org/posts/cv/</link>
+      <pubDate>Mon, 02 Sep 2019 23:09:35 +0100</pubDate>
+      
+      <guid>http://example.org/posts/cv/</guid>
+      <description>MOBILE 07832 965325   EMAIL gvales2831997@gmail.com   GITHUB github.com/StillANixRookie/GavinVales    CAREER HISTORY Aug. 2014 –Oct. 2018  Subway West Quay Southampton Part‐time → Sandwich Artist, at West Quay shopping centre in Southampton
+ 27th Oct. – 31st Oct. 2014  Griffon Hoverworks Ltd. Work experience → Work experience at Griffon Hoverworks Ltd, in Southampton, gaining experience in CAD software in the design office.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/posts/about/</link>
+      <pubDate>Fri, 31 Dec 2010 23:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/about/</guid>
+      <description>Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on! In the novel, The Strange Case of Dr. Jeykll and Mr. Hyde, Mr. Poole is Dr. Jekyll&amp;rsquo;s virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It&amp;rsquo;s made by @mdo.
+There are currently two themes built on Poole:</description>
+    </item>
+    
+  </channel>
+</rss>

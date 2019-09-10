@@ -1,0 +1,14 @@
+theme = "hyde"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Gavin Vales"
+
+[params]
+	themeColor = "theme-base-0d"
+	description = " "
+
+[Menus]
+	main = [
+		{Name = "Github", URL = "https://github.com/StillANixRookie/"},
+		{Name = "gvales2831997@gmail.com", URL = "gvales2831997@gmail.com"},
+	]
