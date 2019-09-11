@@ -59,15 +59,15 @@ html {
 }
 
 body {
-  color: #ffebc3;
-  background-color: #3c4c55;
+  color: #fdf6e3;
+  background-color: #002b36;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #fd888d;
+  color: #268bd2;
   text-decoration: none;
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #ebd7af;
+  color: #e9e2cf;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -107,7 +107,7 @@ p {
 }
 
 strong {
-  color: #ffebc3;
+  color: #fdf6e3;
 }
 
 
@@ -129,19 +129,19 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #506069;
-  border-bottom: 1px solid #3c4c55;
+  border-top: 1px solid #143f4a;
+  border-bottom: 1px solid #002b36;
 }
 
 abbr {
   font-size: 85%;
   font-weight: bold;
-  color: #ebd7af;
+  color: #e9e2cf;
   text-transform: uppercase;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #9c6a70;
+  border-bottom: 1px dotted #135a84;
 }
 
 /* Code */
@@ -152,8 +152,8 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #fd888d;
-  background-color: #9c6a70;
+  color: #268bd2;
+  background-color: #135a84;
   border-radius: 3px;
 }
 pre {
@@ -167,7 +167,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #9c6a70;
+  background-color: #135a84;
 }
 pre code {
   padding: 0;
@@ -187,8 +187,8 @@ pre code {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #d7c39b;
-  border-left: .25rem solid #9c6a70;
+  color: #d5cebb;
+  border-left: .25rem solid #135a84;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -211,17 +211,17 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #ffebc3;
+  border: 1px solid #fdf6e3;
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #ffebc3;
+  border: 1px solid #fdf6e3;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #9c6a70;
+  background-color: #135a84;
 }
 
 
@@ -247,8 +247,8 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #3c4c55;
-  background-color: #ffebc3;
+  color: #002b36;
+  background-color: #fdf6e3;
 }
 
 
@@ -281,15 +281,15 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #ebd7af;
+  color: #e9e2cf;
 }
 .masthead-title a {
-  color: #ebd7af;
+  color: #e9e2cf;
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #64747d;
+  color: #28535e;
   letter-spacing: 0;
 }
 
@@ -310,7 +310,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #ebd7af;
+  color: #e9e2cf;
 }
 .page-title,
 .post-title {
@@ -322,14 +322,14 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #788891;
+  color: #3c6772;
 }
 
 /* Related posts */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #506069;
+  border-top: 1px solid #143f4a;
 }
 .related-posts {
   padding-left: 0;
@@ -340,10 +340,10 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li small {
   font-size: 75%;
-  color: #788891;
+  color: #3c6772;
 }
 .related-posts li a:hover {
-  color: #fd888d;
+  color: #268bd2;
   text-decoration: none;
 }
 .related-posts li a:hover small {
@@ -363,7 +363,7 @@ tbody tr:nth-child(odd) th {
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #506069;
+  color: #143f4a;
   text-align: center;
 }
 
@@ -371,7 +371,7 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #506069;
+  border: 1px solid #143f4a;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -379,7 +379,7 @@ tbody tr:nth-child(odd) th {
 
 /* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
-  background-color: #3c4c55;
+  background-color: #002b36;
 }
 
 @media (min-width: 30em) {

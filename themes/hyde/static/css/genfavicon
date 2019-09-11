@@ -9,3 +9,5 @@ CWLL=$(readlink -f $XDG_PICTURES_DIR/i3wallpaper/current)
 
 convert "${CWLL}" -resize 64x64 ${FDIR}/favicon.png
 cp "${CWLL}" "${SDIR}/about.png"
+cd ${SDIR%/*}
+hugo

@@ -8,11 +8,14 @@ menu:
     weight: 1
 ---
 
-|        |                                       |
-|:------ |:------------------------------------- |
-| MOBILE | 07832 965325                          |
-| EMAIL  | gvales2831997@gmail.com               |
-| GITHUB | github.com/StillANixRookie/GavinVales |
+
+|        |                            |
+|:------ |:-------------------------- |
+| MOBILE | 07832 965325               |
+| EMAIL  | gvales2831997@gmail.com    |
+| GITHUB | github.com/StillANixRookie |
+
+{{%attachments title="PDF version of this CV" pattern=".*(pdf|mp4)"/%}}
 
 ## CAREER HISTORY
 

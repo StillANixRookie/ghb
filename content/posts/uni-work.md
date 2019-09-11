@@ -7,4 +7,6 @@ menu:
     weight: 1
 ---
 
-{{%attachments title="" pattern=".*(pdf|mp4)"/%}}
++ {{%attachments title="" pattern=".*(pdf|mp4)"/%}}
++ [Master's Group Project](http://uosdesign.org/designshow2019/project/seabug/)
+
