@@ -4,7 +4,6 @@ languageCode = "en-us"
 title = "Gavin Vales"
 
 [params]
-	themeColor = "theme-base-0d"
 	description = "My website, built with Hugo, hosted by Github."
 
 [Menus]

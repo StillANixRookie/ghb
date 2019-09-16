@@ -56,8 +56,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(%%bg0RGB%%,.5);
-  background-color: %%acf%%;
+  color: rgba(%%fg0RGB%%,.5);
+  background-color: %%acb%%;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -72,12 +72,12 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: %%bg0%%;
+  color: %%fg0%%;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: %%bg0%%;
+  color: %%fg0%%;
   margin-top: 0;
   font-family: "%%guifont%%", serif;
   font-size: 3.25rem;
