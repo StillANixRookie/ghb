@@ -56,8 +56,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(235, 219, 178,.5);
-  background-color: #365658;
+  color: rgba(48, 47, 48,.5);
+  background-color: #7a90a2;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -72,12 +72,12 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #ebdbb2;
+  color: #302f30;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #ebdbb2;
+  color: #302f30;
   margin-top: 0;
   font-family: "Luxi Mono", serif;
   font-size: 3.25rem;
@@ -179,11 +179,11 @@ a.sidebar-nav-item:focus {
 
 /* Red */
 .theme-base-08 .sidebar {
-  background-color: #cc241d;
+  background-color: #900000;
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
-  color: #cc241d;
+  color: #900000;
 }
 
 /* Orange */
@@ -242,9 +242,9 @@ a.sidebar-nav-item:focus {
 
 /* Brown */
 .theme-base-0f .sidebar {
-  background-color: #365658;
+  background-color: #7a90a2;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
-  color: #365658;
+  color: #7a90a2;
 }

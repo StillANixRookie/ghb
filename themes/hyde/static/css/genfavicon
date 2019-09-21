@@ -9,5 +9,5 @@ CWLL=$(readlink -f $XDG_PICTURES_DIR/i3bg/current)
 
 convert "${CWLL}" -resize 64x64 ${FDIR}/favicon.png
 cp "${CWLL}" "${SDIR}/about.png"
-cd ${SDIR%/*}
+cd $USER_REPO_DIR/ghb
 hugo

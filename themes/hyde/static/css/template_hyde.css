@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "%%guifont%%", "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "%%romanfont%%", "PT Sans", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -79,7 +79,7 @@ html {
 .sidebar-about h1 {
   color: %%fg0%%;
   margin-top: 0;
-  font-family: "%%guifont%%", serif;
+  font-family: "%%romanfont%%", serif;
   font-size: 3.25rem;
 }
 
