@@ -1,38 +1,5 @@
 /*
- *                        ___
- *                       /\_ \
- *  _____     ___     ___\//\ \      __
- * /\ '__`\  / __`\  / __`\\ \ \   /'__`\
- * \ \ \_\ \/\ \_\ \/\ \_\ \\_\ \_/\  __/
- *  \ \ ,__/\ \____/\ \____//\____\ \____\
- *   \ \ \/  \/___/  \/___/ \/____/\/____/
- *    \ \_\
- *     \/_/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/poole.
- */
-
-
-/*
- * Contents
- *
- * Body resets
- * Custom type
- * Messages
- * Container
- * Masthead
- * Posts and pages
- * Pagination
- * Reverse layout
- * Themes
- */
-
-
-/*
- * Body resets
- *
- * Update the foundational and global aspects of the page.
+ * poole
  */
 
 * {
@@ -48,7 +15,7 @@ body {
 }
 
 html {
-  font-family: "%%romanfont%%", Helvetica, Arial, sans-serif;
+  font-family: "Luxi Mono", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -59,29 +26,26 @@ html {
 }
 
 body {
-  color: %%fg0%%;
-  background-color: %%bg0%%;
+  color: #ececec;
+  background-color: #444444;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
-/* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: %%blu%%;
+  color: #7f7f7f;
   text-decoration: none;
 }
-/* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
   text-decoration: underline;
 }
 
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: %%fg1%%;
+  color: #d8d8d8;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -100,18 +64,16 @@ h4, h5, h6 {
   font-size: 1rem;
 }
 
-/* Body text */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
 strong {
-  color: %%fg0%%;
+  color: #ececec;
 }
 
 
-/* Lists */
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -124,27 +86,25 @@ dd {
   margin-bottom: .5rem;
 }
 
-/* Misc */
 hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid %%bg1%%;
-  border-bottom: 1px solid %%bg0%%;
+  border-top: 1px solid #585858;
+  border-bottom: 1px solid #444444;
 }
 
 abbr {
   font-size: 85%;
   font-weight: bold;
-  color: %%fg1%%;
+  color: #d8d8d8;
   text-transform: uppercase;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted %%acb%%;
+  border-bottom: 1px dotted #616161;
 }
 
-/* Code */
 code,
 pre {
   font-family: Monaco, Menlo, "Courier New", monospace;
@@ -152,8 +112,8 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: %%acc%%;
-  background-color: %%acb%%;
+  color: #7f7f7f;
+  background-color: #616161;
   border-radius: 3px;
 }
 pre {
@@ -167,7 +127,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: %%acb%%;
+  background-color: #616161;
 }
 pre code {
   padding: 0;
@@ -183,12 +143,11 @@ pre code {
   margin-bottom: 0;
 }
 
-/* Quotes */
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: %%fg2%%;
-  border-left: .25rem solid %%acb%%;
+  color: #c4c4c4;
+  border-left: .25rem solid #616161;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -207,29 +166,22 @@ img {
   max-width: 100%;
 }
 
-/* Tables */
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid %%fg0%%;
+  border: 1px solid #ececec;
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid %%fg0%%;
+  border: 1px solid #ececec;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: %%acb%%;
+  background-color: #616161;
 }
 
-
-/*
- * Custom type
- *
- * Extend paragraphs with `.lead` for larger introductory text.
- */
 
 .lead {
   font-size: 1.25rem;
@@ -237,26 +189,13 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Messages
- *
- * Show alert messages to users. You may add it to single elements like a `<p>`,
- * or to a parent if there are multiple elements to show.
- */
-
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: %%bg0%%;
-  background-color: %%fg0%%;
+  color: #444444;
+  background-color: #ececec;
 }
 
-
-/*
- * Container
- *
- * Center the page content.
- */
 
 .container {
   max-width: 38rem;
@@ -267,12 +206,6 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Masthead
- *
- * Super small header above the content for site name and short description.
- */
-
 .masthead {
   padding-top:    1rem;
   padding-bottom: 1rem;
@@ -281,55 +214,45 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: %%fg1%%;
+  color: #d8d8d8;
 }
 .masthead-title a {
-  color: %%fg1%%;
+  color: #d8d8d8;
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: %%bg2%%;
+  color: #6c6c6c;
   letter-spacing: 0;
 }
 
-
-/*
- * Posts and pages
- *
- * Each post is wrapped in `.post` and is used on default and post layouts. Each
- * page is wrapped in `.page` and is only used on the page layout.
- */
 
 .page,
 .post {
   margin-bottom: 4em;
 }
 
-/* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-  color: %%fg1%%;
+  color: #d8d8d8;
 }
 .page-title,
 .post-title {
   margin-top: 0;
 }
 
-/* Meta data line below post title */
 .post-date {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: %%bg3%%;
+  color: #808080;
 }
 
-/* Related posts */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid %%bg1%%;
+  border-top: 1px solid #585858;
 }
 .related-posts {
   padding-left: 0;
@@ -340,10 +263,10 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li small {
   font-size: 75%;
-  color: %%bg3%%;
+  color: #808080;
 }
 .related-posts li a:hover {
-  color: %%blu%%;
+  color: #7f7f7f;
   text-decoration: none;
 }
 .related-posts li a:hover small {
@@ -351,35 +274,26 @@ tbody tr:nth-child(odd) th {
 }
 
 
-/*
- * Pagination
- *
- * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
- * there are no more previous or next posts to show.
- */
-
 .pagination {
-  overflow: hidden; /* clearfix */
+  overflow: hidden;
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: %%bg1%%;
+  color: #585858;
   text-align: center;
 }
 
-/* Pagination items can be `span`s or `a`s */
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid %%bg1%%;
+  border: 1px solid #585858;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
 
-/* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
-  background-color: %%bg0%%;
+  background-color: #444444;
 }
 
 @media (min-width: 30em) {
