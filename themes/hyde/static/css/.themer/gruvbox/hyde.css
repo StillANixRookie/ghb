@@ -20,8 +20,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(68, 68, 68,.5);
-  background-color: #b5b5b5;
+  color: rgba(40, 40, 40,.5);
+  background-color: #b1c798;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -35,11 +35,11 @@ html {
 }
 
 .sidebar a {
-  color: #444444;
+  color: #282828;
 }
 
 .sidebar-about h1 {
-  color: #444444;
+  color: #282828;
   margin-top: 0;
   font-family: "Luxi Mono", serif;
   font-size: 3.25rem;
@@ -128,49 +128,49 @@ a.sidebar-nav-item:focus {
 }
 
 .theme-base-0a .sidebar {
-  background-color: #904800;
+  background-color: #d79921;
 }
 .theme-base-0a .content a,
 .theme-base-0a .related-posts li a:hover {
-  color: #904800;
+  color: #d79921;
 }
 
 .theme-base-0b .sidebar {
-  background-color: #009048;
+  background-color: #98971a;
 }
 .theme-base-0b .content a,
 .theme-base-0b .related-posts li a:hover {
-  color: #009048;
+  color: #98971a;
 }
 
 .theme-base-0c .sidebar {
-  background-color: #009090;
+  background-color: #458588;
 }
 .theme-base-0c .content a,
 .theme-base-0c .related-posts li a:hover {
-  color: #009090;
+  color: #458588;
 }
 
 .theme-base-0d .sidebar {
-  background-color: #7f7f7f;
+  background-color: #689d6a;
 }
 .theme-base-0d .content a,
 .theme-base-0d .related-posts li a:hover {
-  color: #7f7f7f;
+  color: #689d6a;
 }
 
 .theme-base-0e .sidebar {
-  background-color: #900048;
+  background-color: #b16286;
 }
 .theme-base-0e .content a,
 .theme-base-0e .related-posts li a:hover {
-  color: #900048;
+  color: #b16286;
 }
 
 .theme-base-0f .sidebar {
-  background-color: #b5b5b5;
+  background-color: #b1c798;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
-  color: #b5b5b5;
+  color: #b1c798;
 }
