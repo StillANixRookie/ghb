@@ -20,8 +20,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(216, 222, 233,.5);
-  background-color: #657f86;
+  color: rgba(59, 66, 82,.5);
+  background-color: #b3cdd2;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -35,11 +35,11 @@ html {
 }
 
 .sidebar a {
-  color: #D8DEE9;
+  color: #3B4252;
 }
 
 .sidebar-about h1 {
-  color: #D8DEE9;
+  color: #3B4252;
   margin-top: 0;
   font-family: "Luxi Mono", serif;
   font-size: 3.25rem;
@@ -168,9 +168,9 @@ a.sidebar-nav-item:focus {
 }
 
 .theme-base-0f .sidebar {
-  background-color: #657f86;
+  background-color: #b3cdd2;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
-  color: #657f86;
+  color: #b3cdd2;
 }

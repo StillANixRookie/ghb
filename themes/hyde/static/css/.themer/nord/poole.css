@@ -26,8 +26,8 @@ html {
 }
 
 body {
-  color: #D8DEE9;
-  background-color: #3B4252;
+  color: #3B4252;
+  background-color: #D8DEE9;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #c4cad5;
+  color: #4f5666;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -70,7 +70,7 @@ p {
 }
 
 strong {
-  color: #D8DEE9;
+  color: #3B4252;
 }
 
 
@@ -90,19 +90,19 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #4f5666;
-  border-bottom: 1px solid #3B4252;
+  border-top: 1px solid #c4cad5;
+  border-bottom: 1px solid #D8DEE9;
 }
 
 abbr {
   font-size: 85%;
   font-weight: bold;
-  color: #c4cad5;
+  color: #4f5666;
   text-transform: uppercase;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #657f86;
+  border-bottom: 1px dotted #b3cdd2;
 }
 
 code,
@@ -113,7 +113,7 @@ code {
   padding: .25em .5em;
   font-size: 85%;
   color: #8FBCBB;
-  background-color: #657f86;
+  background-color: #b3cdd2;
   border-radius: 3px;
 }
 pre {
@@ -127,7 +127,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #657f86;
+  background-color: #b3cdd2;
 }
 pre code {
   padding: 0;
@@ -146,8 +146,8 @@ pre code {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #b0b6c1;
-  border-left: .25rem solid #657f86;
+  color: #636a7a;
+  border-left: .25rem solid #b3cdd2;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -169,17 +169,17 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #D8DEE9;
+  border: 1px solid #3B4252;
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #D8DEE9;
+  border: 1px solid #3B4252;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #657f86;
+  background-color: #b3cdd2;
 }
 
 
@@ -192,8 +192,8 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #3B4252;
-  background-color: #D8DEE9;
+  color: #D8DEE9;
+  background-color: #3B4252;
 }
 
 
@@ -214,15 +214,15 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #c4cad5;
+  color: #4f5666;
 }
 .masthead-title a {
-  color: #c4cad5;
+  color: #4f5666;
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #636a7a;
+  color: #b0b6c1;
   letter-spacing: 0;
 }
 
@@ -235,7 +235,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #c4cad5;
+  color: #4f5666;
 }
 .page-title,
 .post-title {
@@ -246,13 +246,13 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #777e8e;
+  color: #9ca2ad;
 }
 
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #4f5666;
+  border-top: 1px solid #c4cad5;
 }
 .related-posts {
   padding-left: 0;
@@ -263,7 +263,7 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li small {
   font-size: 75%;
-  color: #777e8e;
+  color: #9ca2ad;
 }
 .related-posts li a:hover {
   color: #8FBCBB;
@@ -279,21 +279,21 @@ tbody tr:nth-child(odd) th {
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #4f5666;
+  color: #c4cad5;
   text-align: center;
 }
 
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #4f5666;
+  border: 1px solid #c4cad5;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
 
 a.pagination-item:hover {
-  background-color: #3B4252;
+  background-color: #D8DEE9;
 }
 
 @media (min-width: 30em) {
