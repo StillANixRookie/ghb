@@ -4,7 +4,7 @@
 
 
 html {
-  font-family: "Luxi Mono", "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Product Sans", "PT Sans", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -20,8 +20,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(194, 198, 196,.5);
-  background-color: #3a484b;
+  color: rgba(59, 77, 79,.5);
+  background-color: #f0b1a8;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -35,13 +35,13 @@ html {
 }
 
 .sidebar a {
-  color: #c2c6c4;
+  color: #3b4d4f;
 }
 
 .sidebar-about h1 {
-  color: #c2c6c4;
+  color: #3b4d4f;
   margin-top: 0;
-  font-family: "Luxi Mono", serif;
+  font-family: "Product Sans", serif;
   font-size: 3.25rem;
 }
 
@@ -112,11 +112,11 @@ a.sidebar-nav-item:focus {
 
 
 .theme-base-08 .sidebar {
-  background-color: #8A806F;
+  background-color: #d65455;
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
-  color: #8A806F;
+  color: #d65455;
 }
 
 .theme-base-09 .sidebar {
@@ -128,49 +128,49 @@ a.sidebar-nav-item:focus {
 }
 
 .theme-base-0a .sidebar {
-  background-color: #517689;
+  background-color: #c49b4a;
 }
 .theme-base-0a .content a,
 .theme-base-0a .related-posts li a:hover {
-  color: #517689;
+  color: #c49b4a;
 }
 
 .theme-base-0b .sidebar {
-  background-color: #3E6881;
+  background-color: #8cb88b;
 }
 .theme-base-0b .content a,
 .theme-base-0b .related-posts li a:hover {
-  color: #3E6881;
+  color: #8cb88b;
 }
 
 .theme-base-0c .sidebar {
-  background-color: #638D9C;
+  background-color: #4eb3ac;
 }
 .theme-base-0c .content a,
 .theme-base-0c .related-posts li a:hover {
-  color: #638D9C;
+  color: #4eb3ac;
 }
 
 .theme-base-0d .sidebar {
-  background-color: #277eb8;
+  background-color: #6688ad;
 }
 .theme-base-0d .content a,
 .theme-base-0d .related-posts li a:hover {
-  color: #277eb8;
+  color: #6688ad;
 }
 
 .theme-base-0e .sidebar {
-  background-color: #6F8B94;
+  background-color: #a38895;
 }
 .theme-base-0e .content a,
 .theme-base-0e .related-posts li a:hover {
-  color: #6F8B94;
+  color: #a38895;
 }
 
 .theme-base-0f .sidebar {
-  background-color: #3a484b;
+  background-color: #f0b1a8;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
-  color: #3a484b;
+  color: #f0b1a8;
 }
